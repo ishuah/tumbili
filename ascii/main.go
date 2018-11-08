@@ -26,8 +26,9 @@ func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	}
 	myFigure := figure.NewFigure(asciiRequest.Text, "big", true)
 	asciiResponse := AsciiResponse{
-		Text: asciiRequest.Text,
-		Art:  myFigure.String(),
+		Text:   asciiRequest.Text,
+		Art:    myFigure.String(),
+		Length: len(myFigure.String()),
 	}
 	response, err := json.Marshal(asciiResponse)
 	if err != nil {

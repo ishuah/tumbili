@@ -62,6 +62,12 @@ functions:
       - http:
           path: echo
           method: get
+  ascii:
+    handler: bin/ascii
+    events:
+      - http:
+          path: ascii
+          method: post
 
 plugins:
   - serverless-plugin-git-variables

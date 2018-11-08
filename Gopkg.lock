@@ -16,6 +16,14 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:07d44e110b08edc861f127277728ca1a922d996306fb8831f39ea937c2f00efc"
+  name = "github.com/common-nighthawk/go-figure"
+  packages = ["."]
+  pruneopts = ""
+  revision = "18b2b544842cab16f3ff418fb5290d8f2896a069"
+
+[[projects]]
+  branch = "master"
   digest = "1:ac7ff0abd3d0f08a01e66a9d4da4cec443ef1045bfc687b300e12453348bac55"
   name = "github.com/fnproject/fdk-go"
   packages = [
@@ -31,6 +39,7 @@
   input-imports = [
     "github.com/aws/aws-lambda-go/events",
     "github.com/aws/aws-lambda-go/lambda",
+    "github.com/common-nighthawk/go-figure",
     "github.com/fnproject/fdk-go",
   ]
   solver-name = "gps-cdcl"

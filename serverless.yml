@@ -20,7 +20,7 @@ service: tumbili
 provider:
   name: aws
   runtime: go1.x
-  profile: chautundu
+  profile: ishuah
 
 # you can overwrite defaults here
 #  stage: dev
